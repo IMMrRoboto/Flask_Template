@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title}{{ super() }}{% endblock %}
+
+{% block styles %}
+  <style>h1{color:red}</style>
+{% endblock %}
+
+{% block variable %} {{ variable|safe }} {% endblock %}
+
+{% block content}
+
+  <div><h1>Lorem Ipsum</h1></div>
+
+{% endblock %}
+
+{block scripts %} {% endblock %}
